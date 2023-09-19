@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>3D Tiskárny</title>
+    <style>
+        body {
+            background-image: url(https://static.vecteezy.com/system/resources/previews/001/632/448/original/dark-blue-stripes-geometric-overlapping-background-free-vector.jpg);
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+
+        h2 {
+            text-align: center;
+            border-radius: 25px;
+            background-color: black;
+            color: white;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #e9e9e9;
+            display: flex;
+            justify-content: center;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 40px 10px ;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: darkblue;
+            color: white;
+        }
+
+        .topnav input[type=text] {
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            font-size: 17px;
+        }
+
+        @media screen and (max-width: 900px) {
+            .topnav {
+                flex-direction: column; 
+                align-items: center; 
+            }
+            .topnav a,
+            .topnav input[type=text] {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+
+
+        .ob1 {
+            float: left;
+            height: 200px;
+            width: 300px;
+            margin-right: 2%;
+        }
+
+        .ob2 {
+            float: right;
+            height: 200px;
+            width: 300px;
+            margin-left: 2%;
+        }
+
+        .ob3 {
+            float: right;
+            height: 100px;
+            width: 150px;
+            margin-right: 2px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: small;
+        }
+        p{
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>3D Tisk</h1>
+    </header>
+    <nav>        
+        <div class="topnav">
+                <a  href="index.html"> Úvod</a>
+                <a  href="projekt-historie.html"> Historie</a>
+                <a   href="projekt-vyuziti.html"> Využití</a>
+                <a class="active" href="projekt-druhy.html"> Druhy</a>
+                <a href="projekt-trendy.html"> Trendy</a> 
+                <a  href="projekt-vyrobci.html"> Výrobci</a>
+                <a href="zdroje.html">Zdroje</a> 
+        </div>
+    </nav>
+    <br>
+    <article>
+        <h2>Druhy Tiskáren</h2>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm-8 col-md-12 col-lg-12">
+                <h2>Kartézská</h2>
+                <p>Asi nejtradičnější ovládání na třech lineárních osách. V různých kombinacích, kdy se pohybuje
+                    extrudér
+                    na dvou osách a podložka na jedné. Většina tiskáren je čtvercového tvaru.</p>
+            </div>
+            <div class="col-sm-8 col-md-12 col-lg-12">
+                <h2>Delta</h2>
+                <img class="ob1" src="https://farm8.staticflickr.com/7582/15683643198_1e40dc3a00_z.jpg" alt="">
+                <p>Delta 3D tiskárny využívají technologii třech ramen, které ovládají extruder nacházející se
+                    uprostřed. Ramena pracují v rozsahu 120 a jsou spolu spojena právě v místě extruderu. Proto mají
+                    delta tiskárny velký tiskový prostor a mohou pracovat rychleji. Poměrně složitá geometrie dělá tuto
+                    3D tiskárnu těžší na sestavení a kalibraci. K výpočtu pohybu jednotlivých ramen potřebují speciální
+                    software. </p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="col-sm-8 col-md-12 col-lg-12">
+                <h2>Polar</h2>
+                <img class="ob1"
+                    src="https://makerslab.cz/wp-content/uploads/2016/08/polar-3D-printer-makerslab-500x416.jpg" alt="">
+                <p>3D tiskárny postavené na polárním systému využívají dvě osy pro pohyb tiskové hlavy a rotační
+                    podložky. Tento systém je jednodušší na sestavení, ale horší na ovládání a není příliš mnoho
+                    slicerů, které dokáží převádět do křivek. Vytlačování v křivkách má jisté výhody pro tisk určitých
+                    modelů, především vázovitého typu.</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="col-sm-8 col-md-12 col-lg-12">
+                <h2>DLP</h2>
+                <img class="ob3" src="https://www.dentalchoice.cz/pict/product_cz/main/max_asiga_1_960_x_540.jpg"
+                    alt="">
+                <p>3D tiskárny pro vytvrzování fotopolymerů využívají především spodní osvit pomocí DLP projektoru.
+                    Tisky z těchto strojů jsou velice přesné a krásně hladké. Jedinou nevýhodou je jejich chemický
+                    proces při tisku.</p>
+            </div>
+            <br>
+            <br>
+            <div class="col-sm-8 col-md-12 col-lg-12">
+                <h2>SLA</h2>
+                <p>Tento druh tiskáren pracuje velice podobně jako DLP 3D tiskárny, ale s tím rozdílem, že využívají k
+                    osvitu laser. Osvit je možný jak horní tak spodní přes průhledné dno. Tyto 3D tiskárny mají
+                    uplatnění v medicíně a šperkařství.</p>
+            </div>
+            <div class="col-sm-8 col-md-12 col-lg-12">
+                <h2>SLS “Selective Laser Sintering”</h2>
+                <img class="ob2" src="https://www.makerslab.cz/wp-content/uploads/2016/08/sls-3d-tisk%C3%A1rna-makerslab-300x198.png" alt="">
+                <p>Technologie sintrování (spékání pomocí laseru) prášku je technologie 3D tisku v dnešních dnech
+                    převážně průmyslová. V leteckém a automobilovém průmyslu hojně využívána. V prachové komoře kde se
+                    vždy nanese tenká vrstvička materiálů, které je následně vytvrzena (spečena) laserem, jen tam kde je
+                    potřeba se pomalu vrstvu po vrstvě vytváří 3Dmodel s takřka sls3d tiskárna makerslabdokonalými
+                    vlastnostmi. Do těchto strojů se mohou používat rozličné prachové materiály od pevných kovů jako je
+                    Titan až po konstrukční plasty jako je Polyamid 12. Tisk z kovů se často označuje jako DMLS – Direct
+                    Metal Laser Sintering.</p>
+            </div>
+        </div>
+        </div>
+    </article>
+    <footer>
+        <div>
+     Filip Mašek
+     <br>
+       ©2023 3D Tisk All rights served
+   </div>
+   </footer>
+</body>
+
+</html>
